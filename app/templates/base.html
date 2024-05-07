@@ -9,7 +9,12 @@
 </head>
 
 <body>
-  <div>Nearme: <a href="/index">Home</a></div>
+  <div>
+    Nearme:
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('SignUp') }}">Sign Up</a>
+  </div>
   {% block content %}{% endblock %}
 </body>
 
