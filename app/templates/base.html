@@ -1,0 +1,16 @@
+<html>
+
+<head>
+  {% if title %}
+  <title>{{ title }} - Nearme</title>
+  {% else %}
+  <title>Welcome to nearme!</title>
+  {% endif %}
+</head>
+
+<body>
+  <div>Nearme: <a href="/index">Home</a></div>
+  {% block content %}{% endblock %}
+</body>
+
+</html>
